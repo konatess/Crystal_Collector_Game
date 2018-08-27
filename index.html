@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Collector Game</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cute+Font" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Collector Game</h1>
+    </header>
+      
+    <div class="container col-12 col-sm-10 col-md-8">
+      <div class="instuctions">
+        <h2>Instructions</h2>
+        <ul>
+          <li>You will be given a random number at the start of each round.</li>
+          <li>By clicking on one of the four bugs below, you will add a specific number of points to your total score.</li>
+          <li>If you can make your score exactly match the random number, you will win the game, but if your score goes above the random number, you will lose.</li>
+          <li>The value of each bug is hidden, you will only know how much it is after the amount is added to your score.</li>
+          <li>When you start a new round, the value of each bug will change.</li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="col-sm-8">
+          <h3>Your goal is: <span id="goal">0</span></h3>
+        </div>
+        <div class="col-sm-4" id="wins-losses">
+          <h4>Wins: <span id="wins">0</span></h4>
+          <h4>Losses: <span id="losses">0</span></h4>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-around" id="bugs">
+        <div class="col-10">
+          <img class="bug-image" id="bug1" src="assets/images/bee.png" alt="bug1">
+          <img class="bug-image" id="bug2" src="assets/images/beetle.png" alt="bug2">
+          <img class="bug-image" id="bug3" src="assets/images/butterfly.png" alt="bug3">
+          <img class="bug-image" id="bug4" src="assets/images/snail.png" alt="bug4">
+        </div>
+      </div>
+      <div class="mt-4">
+        <h3>Your total score is: <span id="score">0</span></h3>
+      </div>
+    </div>
+    <footer>
+      icons by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> on <a href="https://www.flaticon.com/">Flaticon</a> <br>
+      <a href="https://www.pexels.com/photo/blue-green-orange-and-red-rainbow-design-decoration-673648/">background</a> by Ghost Presenter on <a href="https://www.pexels.com">Pexels</a>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+  
+  </body>
+
+  
+</html>
