@@ -10,9 +10,23 @@
     var score = 0
     // bug values
     var allbugs = ["#bug1", "#bug2", "#bug3", "#bug4"];
-    for (i = 0; i < allbugs.length; i++ ) {
-        $(allbugs[i]).val(Math.floor((Math.random() * 12) + 1));
+
+    // to keep from repeating numbers in the bugs
+    var b = []
+    for (var j = 0; j < allbugs.length; j++) {
+        var c = Math.floor((Math.random() * 12) + 1)
+        if (!(b.includes(c))) {
+            b.push(c)
+        }
+        else {
+            j--
+        }
+    }
+
+    for (var i = 0; i < allbugs.length; i++ ) {   
+        $(allbugs[i]).val(b[i]);
     };
+    b.length = 0
 
 // functions
     // at the beginning of each round
@@ -21,7 +35,7 @@
             goal = Math.floor((Math.random() * 102) + 19);
             $("#goal").text(goal);
             // generate random bug values
-            for (i = 0; i < allbugs.length; i++ ) {
+            for ( i = 0; i < allbugs.length; i++ ) {
                 $(allbugs[i]).val(Math.floor((Math.random() * 12) + 1));
             };
             // reset score
