@@ -5,4 +5,4 @@ The assignment is to create a game that generates a random number, and by clicki
 
 I decided to use bugs for my theme. Here's a screenshot of the game in action.
 
-![screen shot 2018-08-27 at 7 36 12 pm](https://user-images.githubusercontent.com/36722674/44697873-91712c00-aa32-11e8-8b1e-3947d01189af.png)
+![screen shot 2018-09-05 at 10 00 23 am](https://user-images.githubusercontent.com/36722674/45108861-baf51c00-b0f2-11e8-9634-22a205b52c94.png)
